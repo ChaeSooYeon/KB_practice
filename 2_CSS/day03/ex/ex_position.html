@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      /*
+        display
+
+        none: 화면에 보이지 않음(영역차지x)
+        block: 블록박스 형식. 요소가 있는 줄 전체를 차지
+        inline: 인라인 박스 형식. 요소가 있는 공간만을 차지
+        inline-block: 블록과 인라인 중간형태.
+ 
+        **inline과 inline-block 비교
+        inline: width, height, margin, padding 속성 지정불가.부모?컨텐츠?를 따라감
+        inlnie-block: width, height, margin, padding 속성 지정가능.
+    */
+      /* position 
+        
+        absolute, fixed, relative(부모기준), static(defualt 위치) 
+        absolute - 상위 요소중에 relative가 있다면 그 안에서 절대적위치로 적용됨
+      */
+      h1,
+      span {
+        border: 3px solid red;
+      }
+
+      h1 {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Emotion</h1>
+    <span>Sad</span>
+    <span>Happy</span>
+    <span>love</span>
+  </body>
+</html>
