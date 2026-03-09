@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        /* 높이를 지정하지 않으면 화면에 있는 가장 긴(?)요소의 height가 최대 높이가 됨. */
+        /* --> 브라우저의 최대 높이가 아니게 됨 */
+        /* height:100%을 주면 브라우저 전체 화면을 사용. */
+      }
+      #column {
+        display: flex;
+
+        /* 축방향 */
+        /* flex-direction: column; */
+        flex-direction: row;
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse;  */
+
+        /* 주축 */
+        /* justify-content: flex-end; */
+        /* justify-content: flex-start; */
+        /* justify-content: center; */
+        justify-content: space-between;
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly;  */
+      }
+
+      #row {
+        display: flex;
+
+        /* 축방향 */
+        flex-direction: column;
+        /* flex-direction: row; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse;  */
+
+        /* 교차축 */
+        align-items: center;
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: stretch; */
+      }
+
+      .container div {
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+      }
+      #second1 {
+        background-color: seagreen;
+      }
+      #second2 {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>주축 - justify-content</h2>
+    <div id="column" class="container">
+      <div></div>
+      <div id="second1"></div>
+      <div></div>
+    </div>
+    <hr />
+    <h2>교차축 - align-items</h2>
+    <div id="row" class="container">
+      <div></div>
+      <div id="second2"></div>
+      <div></div>
+    </div>
+  </body>
+</html>

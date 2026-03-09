@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+              none: 화면에 보이지 않음(영역차지x)
+              block: 블록박스 형식. 요소가 있는 줄 전체를 차지
+              inline: 인라인 박스 형식. 요소가 있는 공간만을 차지
+              inline-block: 블록과 인라인 중간형태.
+          */
+      /*
+              inline과 inline-block 비교
+              inline: width, height, margin, padding 속성 지정불가.부모?컨텐츠?를 따라감
+              inlnie-block: width, height, margin, padding 속성 지정가능.
+          */
+
+      #box1 {
+        display: inline;
+        background-color: red;
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+      }
+      #box2 {
+        display: inline-block;
+        background-color: red;
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <span>dummy</span>
+    <div id="box1">dummy</div>
+    <div id="box2">dummy</div>
+    <span>dummy</span>
+  </body>
+</html>
