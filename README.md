@@ -16,5 +16,5 @@ KB IT's Your Life 실습 코드
 6. [Vue.js](./docs/6.VueJs.md)
 7. Java
 8. Spring
-9. Git
+9. [Git](./docs/9.Git.md)
 10. CI/CD
