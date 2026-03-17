@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <h2>{{message}}</h2>
+    </div>
+    <!-- vue라이브러리 호출 -->
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+      let model = { message: 'Hello Vue3!' };
+      // view model 생성
+      let vm = Vue.createApp({
+        // 옵션 객체
+        name: 'App',
+        data() {
+          return model;
+        },
+      }).mount('#app'); // mount: 'app'과 view model을 연결하여 렌더링 하겠다. viwe model의 관리대상으로 설정하는 것
+    </script>
+  </body>
+</html>
